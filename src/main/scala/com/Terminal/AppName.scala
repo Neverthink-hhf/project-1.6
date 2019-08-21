@@ -1,15 +1,16 @@
-package com.Rpt
+package com.Terminal
 
 import java.util.Properties
 
 import com.typesafe.config.ConfigFactory
 import com.utils.RptUtils
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
+import org.apache.spark.{SparkConf, SparkContext}
 
-object Devicetype {
+object AppName {
   def main(args: Array[String]): Unit = {
+
 
     // 判断路径是否正确
     if(args.length != 2){
@@ -44,15 +45,7 @@ object Devicetype {
       val adpayment: Double = row.getAs[Double]("adpayment")
 
       //  需要的网络类型
-      val devicetype: Int = row.getAs[Int]("devicetype")
-      var dev_type = ""
-      if (devicetype == 1) {
-        dev_type = "手机"
-      } else if (devicetype == 2) {
-        dev_type = "平板"
-      } else {
-        dev_type = "其他"
-      }
+      val appname: String = row.getAs[String]("appname")
 
       //  根据指标的不同，需要创建三个对应的方法来处理九个指标
 
@@ -70,7 +63,7 @@ object Devicetype {
 
       //  返回类型
 
-      (dev_type, list4)
+      (appname, list4)
     })
 
 
@@ -89,8 +82,9 @@ object Devicetype {
     val prop = new Properties()
     prop.setProperty("user", load.getString("jdbc.user"))
     prop.setProperty("password", load.getString("jdbc.password"))
-    df.write.mode(SaveMode.Overwrite).jdbc(load.getString("jdbc.url"), "DevicetypeRpt", prop)
+    df.write.mode(SaveMode.Overwrite).jdbc(load.getString("jdbc.url"), "AppNameRpt", prop)
 
     sc.stop()
+
   }
 }

@@ -1,14 +1,14 @@
-package com.Rpt
+package com.Terminal
 
 import java.util.Properties
 
 import com.typesafe.config.ConfigFactory
 import com.utils.RptUtils
 import org.apache.spark.rdd.RDD
-import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
+import org.apache.spark.{SparkConf, SparkContext}
 
-object NetworkRpt {
+object Network {
   def main(args: Array[String]): Unit = {
 
     // 判断路径是否正确

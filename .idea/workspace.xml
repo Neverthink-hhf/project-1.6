@@ -2,96 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31995441-20c0-455a-959c-6920a254bab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/ClientRpt.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/LocationRpt_sql.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/NetworkRpt.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/OperatorRpt.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/Project_1.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/Parquet2json.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/txt2Parquet$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/txt2Parquet$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/txt2Parquet$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/txt2Parquet$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/ETL/txt2Parquet.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/AppNameRpt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/ClientRpt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/Devicetype.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt_sql$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt_sql$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt_sql$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/LocationRpt_sql.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/NetworkRpt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$2$$anonfun$apply$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$anonfun$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$$typecreator1$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/Rpt/OperatorRpt.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/RptUtils$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/RptUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/SchemaUtils$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/SchemaUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/Utils2Type$.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/utils/Utils2Type.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/ETL/Parquet2json.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/ETL/Parquet2json.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/LocationRpt.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/Rpt/LocationRpt.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/utils/RptUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/utils/RptUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Terminal/AppName.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Terminal/Client.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Terminal/Devicetype.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Terminal/Network.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Terminal/Operator.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/ClientRpt.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/NetworkRpt.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Rpt/OperatorRpt.scala" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Project_2.0/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_2.0/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Project_2.0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Project_2.0/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -121,54 +41,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/NetworkRpt.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Operator.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="97" column="13" selection-start-line="78" selection-end-line="97" selection-end-column="13" />
-              <folding>
-                <element signature="e#17#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Network.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="93" selection-end-column="13" />
-              <folding>
-                <element signature="e#17#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/ClientRpt.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Devicetype.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="95" selection-start-line="13" selection-end-line="95" />
-              <folding>
-                <element signature="e#17#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Client.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/AppName.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
-              <folding>
-                <element signature="e#17#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="88">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Scala Object" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -193,6 +117,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/Rpt/ClientRpt.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Terminal/OperatorRpt.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Terminal/Operator.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Terminal/AppNameRpt.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Terminal/AppName.scala" />
       </list>
     </option>
   </component>
@@ -210,9 +138,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="312" />
+    <option name="x" value="566" />
     <option name="y" value="52" />
-    <option name="width" value="1049" />
+    <option name="width" value="795" />
     <option name="height" value="668" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -288,6 +216,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="Terminal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Project-1.6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Project_1.6" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -328,12 +265,12 @@
   </component>
   <component name="RunManager" selected="Application.AppNameRpt">
     <configuration name="AppNameRpt" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Rpt.AppNameRpt" />
+      <option name="MAIN_CLASS_NAME" value="com.Terminal.AppName" />
       <module name="Project_1" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\out 111" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Rpt.*" />
+          <option name="PATTERN" value="com.Terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -342,12 +279,12 @@
       </method>
     </configuration>
     <configuration name="ClientRpt" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Rpt.ClientRpt" />
+      <option name="MAIN_CLASS_NAME" value="com.Terminal.Client" />
       <module name="Project_1" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\out 111" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Rpt.*" />
+          <option name="PATTERN" value="com.Terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -356,12 +293,12 @@
       </method>
     </configuration>
     <configuration name="Devicetype" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Rpt.Devicetype" />
+      <option name="MAIN_CLASS_NAME" value="com.Terminal.Devicetype" />
       <module name="Project_1" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\out 111" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Rpt.*" />
+          <option name="PATTERN" value="com.Terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -370,12 +307,12 @@
       </method>
     </configuration>
     <configuration name="NetworkRpt" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Rpt.NetworkRpt" />
+      <option name="MAIN_CLASS_NAME" value="com.Terminal.Network" />
       <module name="Project_1" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\out 111" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Rpt.*" />
+          <option name="PATTERN" value="com.Terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -384,12 +321,12 @@
       </method>
     </configuration>
     <configuration name="OperatorRpt" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.Rpt.OperatorRpt" />
+      <option name="MAIN_CLASS_NAME" value="com.Terminal.Operator" />
       <module name="Project_1" />
       <option name="PROGRAM_PARAMETERS" value="C:\Users\Administrator\Desktop\out 111" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Rpt.*" />
+          <option name="PATTERN" value="com.Terminal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -429,7 +366,7 @@
       <workItem from="1566361547491" duration="599000" />
       <workItem from="1566365987641" duration="200000" />
       <workItem from="1566366226596" duration="762000" />
-      <workItem from="1566367123771" duration="21739000" />
+      <workItem from="1566367123771" duration="21997000" />
     </task>
     <task id="LOCAL-00001" summary="Spark-1.6">
       <created>1566358532721</created>
@@ -445,21 +382,28 @@
       <option name="project" value="LOCAL" />
       <updated>1566367145874</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Spark-1.6">
+      <created>1566391482859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566391482859</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26463000" />
+    <option name="totallyTimeSpent" value="26721000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="312" y="52" width="1049" height="668" extended-state="0" />
+    <frame x="566" y="52" width="795" height="668" extended-state="0" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.30496454" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.54297405" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -505,16 +449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/OperatorRpt.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-          <folding>
-            <element signature="e#17#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/ETL/Parquet2json.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -549,16 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/NetworkRpt.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="97" column="13" selection-start-line="78" selection-end-line="97" selection-end-column="13" />
-          <folding>
-            <element signature="e#17#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/LocationRpt.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -579,23 +503,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="93" selection-end-column="13" />
+        <state relative-caret-position="235">
+          <caret line="80" column="35" lean-forward="true" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
           <folding>
             <element signature="e#17#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/AppNameRpt.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/Devicetype.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="81" column="31" lean-forward="true" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        <state relative-caret-position="270">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding>
             <element signature="e#17#44#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/NetworkRpt.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+          <folding>
+            <element signature="e#17#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Rpt/OperatorRpt.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1476">
+          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+          <folding>
+            <element signature="e#17#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Operator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Network.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Devicetype.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/Client.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Terminal/AppName.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>

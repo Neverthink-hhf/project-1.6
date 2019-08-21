@@ -1,4 +1,4 @@
-package com.Rpt
+package com.Terminal
 
 import java.util.Properties
 
@@ -8,7 +8,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext, SaveMode}
 import org.apache.spark.{SparkConf, SparkContext}
 
-object OperatorRpt {
+object Operator {
   def main(args: Array[String]): Unit = {
 
     // 判断路径是否正确
