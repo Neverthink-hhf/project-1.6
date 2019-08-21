@@ -46,5 +46,7 @@ object Parquet2json {
 
     df.write.mode(SaveMode.Overwrite).jdbc(url, "city_info_16", prop)
 //    df.write.json(outputPath)
+
+    sc.stop()
   }
 }
