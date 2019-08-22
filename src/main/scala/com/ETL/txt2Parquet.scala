@@ -42,7 +42,7 @@ object txt2Parquet {
     // 这样切割才会比较准确，比如，，，，，，，，，，，会当成一个字符切割，需要加上对应的匹配参数
     // 比如可以加上t.length
 
-    val logs: RDD[Array[String]] = lines.map(x => x.split(",",x.length))filter(x => x.length >= 85)
+    val logs: RDD[Array[String]] = lines.map(x => x.split(",",x.length)).filter(x => x.length >= 85)
 
     // 8.切割数据
     val rowRDD: RDD[Row] = logs.map(arr => {

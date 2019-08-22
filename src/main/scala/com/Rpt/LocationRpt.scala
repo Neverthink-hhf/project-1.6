@@ -70,7 +70,8 @@ object LocationRpt {
     })
 
 
-    val tup1: RDD[(String, String, Double, Double, Double, Double, Double, Double, Double, Double, Double)] = tup.groupByKey
+    val tup1: RDD[(String, String, Double, Double, Double, Double, Double, Double, Double, Double, Double)] =
+      tup.groupByKey
       .map(x => (x._1, x._2.toList.reduce((x, y) => x.zip(y).map(x => x._1 + x._2))))
       .map(x => (x._1._1, x._1._2, x._2(0), x._2(1), x._2(2),
         x._2(3), x._2(4), x._2(5), x._2(6), x._2(7), x._2(8)))
