@@ -6,6 +6,6 @@ trait Tag {
     * 打标签的统一接口
     */
 
-  def makeTags(args: Any*): List[(String, Int)]
+  def makeTags(args:Any*): List[(String, Int)]
 
 }

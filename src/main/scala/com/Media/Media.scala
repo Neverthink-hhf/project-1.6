@@ -35,8 +35,8 @@ object Media {
     val App: Map[String, String] = lines.map(x => x.split("\\s", x.length))
       .filter(x => x.length >= 5)
       .map(arr => {
-        val appid = arr(1)
-        val appname = arr(4)
+        val appid = arr(4)
+        val appname = arr(1)
         (appid, appname)
       }).collect().toMap
 
