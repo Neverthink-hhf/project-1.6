@@ -1,7 +1,8 @@
 package com.Tags
 
 import com.utils.TagUtils
-import org.apache.spark.sql.{DataFrame, SQLContext}
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
@@ -39,9 +40,6 @@ object TagsContext {
         val adList: List[(String, Int)] = TagsAd.makeTags(row)
 
       })
-
-
-
 
 
   }

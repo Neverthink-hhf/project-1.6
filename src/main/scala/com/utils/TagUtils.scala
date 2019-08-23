@@ -13,7 +13,7 @@ object TagUtils {
       """
         |imei != '' or mac != '' or openudid != '' or androidid != '' or idfa != '' or
         |imei5 != '' or mac != '' or openudid5 != '' or androidid5 != '' or idfa5 != '' or
-        |imei1 != '' or mac1 != '' or openudid1 != '' or androidid1 != '' or idfa1 != ''
+        |imeisha1 !='' or macsha1 !='' or openudidsha1 !='' or androididsha1 !='' or idfasha1 !=''
       """.stripMargin
 
     //  去除唯一不为空的Id
