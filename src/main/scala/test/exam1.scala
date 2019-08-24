@@ -58,8 +58,6 @@ object exam1 {
       .groupBy(x => x._1)
       .mapValues(x => x.size).toList.sortBy(x => x._2)
 
-
     res1.foreach(println)
-
   }
 }
