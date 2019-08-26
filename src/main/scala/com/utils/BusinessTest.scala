@@ -18,8 +18,7 @@ object BusinessTest {
     val df: DataFrame = ssc.read.parquet("C:\\Users\\Administrator\\Desktop\\out")
 
     df.map(row => {
-      val business: List[(String, Int)] = TagsBusiness.makeTags(row)
-
+      val business = TagsBusiness.makeTags(row)
       business
     }).foreach(println)
   }
