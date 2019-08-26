@@ -42,7 +42,7 @@ object TagsContext {
 //    RedisUtils.write(log)
 
     //  获取停用词库
-    val stopword = sc.textFile("E:\\= =\\项目\\Spark用户画像分析\stopwords.txt").map((_,0)).collectAsMap()
+    val stopword = sc.textFile("E:\\= =\\项目\\Spark用户画像分析\\stopwords.txt").map((_,0)).collectAsMap()
     val bcstopword = sc.broadcast(stopword)
 
     //  获取数据
