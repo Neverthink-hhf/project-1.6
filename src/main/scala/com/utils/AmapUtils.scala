@@ -16,7 +16,7 @@ object AmapUtils {
 
     val urlStr = "https://restapi.amap.com/v3/geocode/regeo?" +
       "output=xml&location=116.310003,39.991957" +
-      "&key=<用户的key>&radius=1000&extensions=all"
+      "&key=ac807ae142f784fb4ab664889fe9ffb2&radius=1000&extensions=all"
 
 
     //  调用请求

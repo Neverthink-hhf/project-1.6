@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31995441-20c0-455a-959c-6920a254bab5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Tags/TagsKeyWord.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Tags/TagsLocations.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/Tags/BusinessTag.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/Tags/TagsContext.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/Tags/TagsContext.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsContext.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+            <state relative-caret-position="443">
+              <caret line="67" selection-start-line="67" selection-end-line="68" />
               <folding>
                 <element signature="e#18#57#0" expanded="true" />
               </folding>
@@ -33,37 +32,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsLocations.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/HttpUtil.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="105">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
-                <element signature="e#18#38#0" expanded="true" />
+                <element signature="e#19#89#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsKeyWord.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            <state relative-caret-position="272">
+              <caret line="28" column="53" lean-forward="true" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
               <folding>
-                <element signature="e#18#38#0" expanded="true" />
+                <element signature="e#19#76#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/test/exam1.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/BusinessTag.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="812">
-              <caret line="58" column="54" lean-forward="true" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
-              <folding>
-                <element signature="e#14#71#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="192">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -127,13 +123,14 @@
         <option value="$PROJECT_DIR$/dir/package.json" />
         <option value="$PROJECT_DIR$/src/main/scala/test/test.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/test/exam2.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/utils/HttpUtil.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/test/exam1.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/utils/App2Jedis.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/Tags/TagsLocations.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/Tags/TagsKeyWord.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/Tags/TagsContext.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/Tags/BusinessTag.scala" />
       </list>
     </option>
   </component>
@@ -167,9 +164,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="656" />
+    <option name="x" value="652" />
     <option name="width" value="716" />
-    <option name="height" value="788" />
+    <option name="height" value="735" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -225,14 +222,6 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="Tags" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Project-1.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Project_1.6" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -387,6 +376,7 @@
       <workItem from="1566577705862" duration="531000" />
       <workItem from="1566578279577" duration="3316000" />
       <workItem from="1566607185572" duration="25135000" />
+      <workItem from="1566782109750" duration="1960000" />
     </task>
     <task id="LOCAL-00001" summary="Spark-1.6">
       <created>1566358532721</created>
@@ -465,14 +455,30 @@
       <option name="project" value="LOCAL" />
       <updated>1566648917272</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Spark-1.6">
+      <created>1566782247196</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1566782247196</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98688000" />
+    <option name="totallyTimeSpent" value="100648000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="707" y="0" width="665" height="788" extended-state="0" />
+    <frame x="652" y="0" width="716" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
@@ -480,13 +486,13 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" weight="0.30172414" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.36238533" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32998326" />
-      <window_info anchor="bottom" x="636" y="278" width="706" height="178" id="Terminal" order="2" weight="0.29716194" />
+      <window_info anchor="bottom" x="636" y="278" width="706" height="178" id="Terminal" order="2" weight="0.2964824" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50124687" side_tool="true" weight="0.3082077" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50124687" side_tool="true" weight="0.30653265" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.32328308" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" weight="0.32998326" />
@@ -494,14 +500,14 @@
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" weight="0.32888147" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="TODO" order="12" weight="0.32663316" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32998326" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Database" order="1" weight="0.3286119" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.328125" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32721713" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.24696356" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.24934725" />
@@ -695,13 +701,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dir/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7912" selection-start-column="7912" selection-end-column="7912" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dir/package.json" />
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagChannel.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -712,42 +712,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dir/a">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9" selection-end-column="7912" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dir/json.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/test/exam2.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="54" selection-start-line="54" selection-end-line="54" />
           <folding>
             <element signature="e#14#60#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-          <folding>
-            <element signature="e#19#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/HttpUtil.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#19#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -782,20 +752,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsLocations.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#18#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsKeyWord.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="31" />
           <folding>
             <element signature="e#18#38#0" expanded="true" />
           </folding>
@@ -804,21 +764,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/test/exam1.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="812">
-          <caret line="58" column="54" lean-forward="true" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+        <state relative-caret-position="1144">
+          <caret line="58" column="54" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
           <folding>
             <element signature="e#14#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dir/a">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dir/json.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsLocations.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#18#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/TagsContext.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+        <state relative-caret-position="443">
+          <caret line="67" selection-start-line="67" selection-end-line="68" />
           <folding>
             <element signature="e#18#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/HttpUtil.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="e#19#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/utils/AmapUtils.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="53" lean-forward="true" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding>
+            <element signature="e#19#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/Tags/BusinessTag.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
