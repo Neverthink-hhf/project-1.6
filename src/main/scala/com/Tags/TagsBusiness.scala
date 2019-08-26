@@ -4,7 +4,6 @@ import ch.hsr.geohash.GeoHash
 import com.utils.{AmapUtils, JedisConnectPool, Tag, Utils2Type}
 import org.apache.commons.lang3.StringUtils
 import org.apache.spark.sql.Row
-import redis.clients.jedis.Jedis
 
 /**
   * 商圈标签
