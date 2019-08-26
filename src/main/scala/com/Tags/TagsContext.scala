@@ -37,10 +37,13 @@ object TagsContext {
         (appid, appname)
       })
 
-    val broadcast: Broadcast[collection.Map[String, String]] = sc.broadcast(log.collectAsMap())
+    val AppDir: Broadcast[collection.Map[String, String]] = sc.broadcast(log.collectAsMap())
 
 //    RedisUtils.write(log)
 
+    //  获取停用词库
+    val stopword = sc.textFile("E:\\= =\\项目\\Spark用户画像分析\stopwords.txt").map((_,0)).collectAsMap()
+    val bcstopword = sc.broadcast(stopword)
 
     //  获取数据
     val df: DataFrame = sQLContext.read.parquet(inputPath)
@@ -55,15 +58,34 @@ object TagsContext {
         val adList: List[(String, Int)] = TagsAd.makeTags(row)
 
         //  App标签
-        val Applist: List[(String, Int)] = TagsApp.makeTags(row, broadcast)
+        val Applist: List[(String, Int)] =
+          TagsApp.makeTags(row, AppDir)
 
         //  渠道
-        val channellist: List[(String, Int)] = TagChannel.makeTags(row)
+        val channellist: List[(String, Int)] =
+          TagChannel.makeTags(row)
 
         //  设备
-        val value: List[(String, Int)] = TagsEquipment.makeTags(row)
-        (userId, adList, Applist, channellist, value)
-      }).foreach(x => println(x))
+        val Equipment: List[(String, Int)] =
+          TagsEquipment.makeTags(row)
+
+        //  关键字
+        val KeyWordList: List[(String, Int)] =
+          TagsKeyWord.makeTags(row, bcstopword)
+
+        //  地理位置
+        val localList: List[(String, Int)] =
+          TagsLocations.makeTags(row)
+
+        (userId, adList ++ Applist
+          ++ Equipment ++ KeyWordList ++ localList)
+      })
+      .reduceByKey((list1, list2) =>
+        (list1 ::: list2)
+        .groupBy(x => x._1)
+        .mapValues(x => x.foldLeft[Int](0)((x, y) => x + y._2))
+        .toList
+      ).foreach(x => println(x))
 
   }
 }
