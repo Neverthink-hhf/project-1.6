@@ -1,6 +1,7 @@
 package com.utils
 
 import com.Tags.TagsBusiness
+import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
 
@@ -20,6 +21,6 @@ object BusinessTest {
     df.map(row => {
       val business = TagsBusiness.makeTags(row)
       business
-    }).foreach(println)
+    }).filter(x => x(0) == "").count()
   }
 }

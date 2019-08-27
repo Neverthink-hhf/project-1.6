@@ -30,7 +30,7 @@ object AmapUtils {
 
     //  接下来解析内部json串
     //    判断每个Key的Value都不能为空
-    val regeocodesJson: JSONObject = jsonparse.getJSONObject("regeocodes")
+    val regeocodesJson: JSONObject = jsonparse.getJSONObject("regeocode")
     if(regeocodesJson == null || regeocodesJson.keySet().isEmpty) return ""
 
     val addressComponentJson: JSONObject = regeocodesJson.getJSONObject("addressComponent")
@@ -49,6 +49,7 @@ object AmapUtils {
         buffer.append(json.getString("name"))
       }
     }
+//    println(buffer)
     buffer.mkString(",")
   }
 }

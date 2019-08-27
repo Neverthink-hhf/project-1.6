@@ -13,27 +13,24 @@ object TagsBusiness extends Tag{
     * 打标签的统一接口
     */
   override def makeTags(args: Any*): List[(String, Int)] = {
-    var list = List[(String, Int)]()
-
-    //  解析参数
-    val row: Row = args(0).asInstanceOf[Row]
-    val long: String = row.getAs[String]("long")
-    val lat: String = row.getAs[String]("lat")
-    //  获取经纬度、过滤经纬度
+    var list =List[(String,Int)]()
+    // 解析参数
+    val row = args(0).asInstanceOf[Row]
+    val long = row.getAs[String]("long")
+    val lat = row.getAs[String]("lat")
+    // 获取经纬度，过滤经纬度
     if(Utils2Type.toDouble(long)>= 73.0 &&
       Utils2Type.toDouble(long)<= 135.0 &&
       Utils2Type.toDouble(lat)>=3.0 &&
       Utils2Type.toDouble(lat)<= 54.0){
-
-      //  先去数据库获取商圈
-      val business: String = getBusiness(long.toDouble, lat.toDouble)
-
-      //  判断缓存中是否有此商圈
+      // 先去数据库获取商圈
+      val business = getBusiness(long.toDouble,lat.toDouble)
+      // 判断缓存中是否有此商圈
       if(StringUtils.isNotBlank(business)){
-
-        val lines: Array[String] = business.split(",")
-        lines.foreach(x => list:+=(x, 1))
+        val lines = business.split(",")
+        lines.foreach(f=>list:+=(f,1))
       }
+      //      list:+=(business,1)
     }
     list
   }
@@ -54,7 +51,7 @@ object TagsBusiness extends Tag{
     if(business == null || business.length == 0){
 
       //  通过经纬度获取商圈
-      val str: String = AmapUtils.getBusinessFromAmap(long.toDouble, lat.toDouble)
+      val business: String = AmapUtils.getBusinessFromAmap(long.toDouble, lat.toDouble)
 
       //  如果调用高德地图解析商圈，那么需要将此次商圈存入redis
       redis_insertBusiness(geohash, business)
