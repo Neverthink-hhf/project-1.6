@@ -10,6 +10,7 @@ import org.apache.hadoop.hbase.mapred.TableOutputFormat
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.hadoop.mapred.JobConf
 import org.apache.spark.broadcast.Broadcast
+import org.apache.spark.graphx.{Edge, Graph}
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{DataFrame, Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
@@ -89,58 +90,98 @@ object TagsContext {
     //  获取数据
     val df: DataFrame = sQLContext.read.parquet(inputPath)
 
-    df.filter(TagUtils.OneUserId)
+    //  过滤符合条件的ID
+    val baseRDD: RDD[(List[String], Row)] = df.filter(TagUtils.OneUserId)
       .map(row => {
-
-        //  取出用户Id,用户id
-        val userId = TagUtils.getOneUserId(row)
-
-        //  接下来通过row数据  打上所有标签（按照需求）,广告标签
-        val adList: List[(String, Int)] = TagsAd.makeTags(row)
-
-        //  App标签
-        val Applist: List[(String, Int)] =
-          TagsApp.makeTags(row, AppDir)
-
-        //  渠道
-        val channellist: List[(String, Int)] =
-          TagChannel.makeTags(row)
-
-        //  设备
-        val Equipment: List[(String, Int)] =
-          TagsEquipment.makeTags(row)
-
-        //  关键字
-        val KeyWordList: List[(String, Int)] =
-          TagsKeyWord.makeTags(row, bcstopword)
-
-        //  地理位置
-        val localList: List[(String, Int)] =
-          TagsLocations.makeTags(row)
-
-        //  商圈
-        val business = TagsBusiness.makeTags(row)
-
-        (userId, adList ++ Applist
-          ++ Equipment ++ KeyWordList ++ localList
-          ++ business)
+        val userList: List[String] = TagUtils.getAllUserId(row)
+        (userList, row)
       })
-      .reduceByKey((list1, list2) =>
-        (list1 ::: list2)
-          .groupBy(x => x._1)
-          .mapValues(x => x.foldLeft[Int](0)((x, y) => x + y._2))
-          .toList
-      ).map {
 
-      case (userid, userTag) => {
+
+    //  构建点集合
+    val vertiesRDD: RDD[(Long, List[(String, Int)])] = baseRDD.flatMap(tp => {
+      val row = tp._2
+
+      //  所有标签
+      //  接下来通过row数据  打上所有标签（按照需求）,广告标签
+      val adList: List[(String, Int)] = TagsAd.makeTags(row)
+
+      //  App标签
+      val Applist: List[(String, Int)] =
+        TagsApp.makeTags(row, AppDir)
+
+      //  渠道
+      val channellist: List[(String, Int)] =
+        TagChannel.makeTags(row)
+
+      //  设备
+      val Equipment: List[(String, Int)] =
+        TagsEquipment.makeTags(row)
+
+      //  关键字
+      val KeyWordList: List[(String, Int)] =
+        TagsKeyWord.makeTags(row, bcstopword)
+
+      //  地理位置
+      val localList: List[(String, Int)] =
+        TagsLocations.makeTags(row)
+
+      //  商圈
+      val businesslist = TagsBusiness.makeTags(row)
+
+      //  所有标签
+      val AllTag: List[(String, Int)] = adList ++ Applist ++ KeyWordList ++ channellist ++ Equipment ++ localList ++ businesslist
+
+      //  保证其中一个点携带着所有的标签，同时也保留所有的Uid
+      val VD = tp._1.map(x => (x, 0)) ++ AllTag
+
+      tp._1.map(uid => {
+
+        //  保证一个点携带标签(uid, vd),(uid, list()),(uid, list())
+        if (tp._1.head.equals(uid)) {
+          (uid.hashCode.toLong, VD)
+        } else {
+          (uid.hashCode.toLong, List.empty)
+        }
+      })
+    })
+    vertiesRDD
+
+    // 构建边的集合
+    val edges: RDD[Edge[Int]] = baseRDD.flatMap(tp => {
+      // A B C : A->B A->C
+      tp._1.map(uId => Edge(tp._1.head.hashCode, uId.hashCode, 0))
+    })
+    //edges.take(20).foreach(println)
+
+    // 构建图
+    val graph = Graph(vertiesRDD,edges)
+    // 取出顶点 使用的是图计算中的连通图算法
+    val vertices = graph.connectedComponents().vertices
+
+    // 处理所有的标签和id
+    vertices.join(vertiesRDD).map{
+      case (uId,(conId,tagsAll))=>(conId,tagsAll)
+    }.reduceByKey((list1,list2)=>{
+      // 聚合所有的标签
+      (list1++list2).groupBy(_._1).mapValues(_.map(_._2).sum).toList
+    }).map{
+      case(userid,userTag)=>{
 
         val put = new Put(Bytes.toBytes(userid))
         // 处理下标签
-        val tags = userTag.map(t => t._1 + "," + t._2).mkString(",")
-        put.addImmutable(Bytes.toBytes("tags"), Bytes.toBytes("1566822489462"), Bytes.toBytes(tags))
-        (new ImmutableBytesWritable(), put)
+        val tags = userTag.map(t=>t._1+","+t._2).mkString(",")
+        put.addImmutable(Bytes.toBytes("tags"),Bytes.toBytes("1566911430796"),Bytes.toBytes(tags))
+        (new ImmutableBytesWritable(),put)
       }
     }
+      // 保存到对应表中
       .saveAsHadoopDataset(jobconf)
+
+
+
+
+
+
   }
 }
